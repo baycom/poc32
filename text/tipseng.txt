@@ -1,0 +1,16 @@
+Entries can be sorted by the different categories by clicking on the head of the according column. Multiple clicks on the same column reverse the sort order.
+With View/Hide you can remove the POC32 window. POC32 will now run in the background and can be made visible by clicking on the little symbol in the right of the taskbar.
+POC32 files are stored as ASCII Text. For e.g. you can convert POC32 files with Microsoft Word into tables. The tab-character seperates the columns!
+You can use different character- sets and tables. So POC32 should work in every country. You can change the settings by selecting View/Font and En-/Decoder/Properties/Decoder/Charactertable.
+by selecting View/Always On Top you can bring the POC32 window instant to top. This means that you can watch the POC32 window while working with other applications.
+POC32 can use a soundcard and/or a small decoder for the serial port. Bitrates and messagetypes are recognized automatically.
+Best decoding results are reached by strong signals and it is strongly recommended using a baseband (==discriminator) output of the receiver.
+On some newer PCI motherboards it's not possible using the com-port decoder!
+POC32 was developed with Mircosoft Visual C++ and Microsoft Foundation Classes.
+By using a soundcard POC32 samples with 11.025kHz and 16-bit. For decoding the data a DPLL (Digital Phase Locked Loop) is used.
+You can get a statistic about received POCSAG packets by selecting En-/Decoder/Properties/Statistic.
+POC32 can print out the entries of the monitor window!
+Transmitting POCSAG packets is only available using windows 95. Simply select En-/Decoder/Transmit to open the transmit dialog.
+You can get allready formatted data from POC32 you can copy all or some entries of the monitor window to the clipboard. To convert these entries into a table a tab-character is inserted between the columns.
+All toolbars can be moved and repositioned everywhere. To do this click on an edge of a toolbar and drag it somewhere else while holding down your left mouse key.
+Most problems with POC32 are caused by people who haven't read all the documentation!

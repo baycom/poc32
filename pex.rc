@@ -1,0 +1,1973 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,17,0,1
+ PRODUCTVERSION 2,17,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "POCSAG Monitor Software"
+            VALUE "FileVersion", "2.17.0.1"
+            VALUE "InternalName", "POC32"
+            VALUE "LegalCopyright", "Copyright ©1996-2018 BayCom GmbH"
+            VALUE "OriginalFilename", "POC32.EXE"
+            VALUE "ProductName", "POC32"
+            VALUE "ProductVersion", " 2.XX"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Deutsch (Deutschland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 7, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\pex32.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.deu\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.deu\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\pex32.ico"
+
+IDR_PEX32TYPE           ICON                    "res\\pex32Doc.ico"
+
+IDR_TMOBIL              ICON                    "res\\idr_pex3.ico"
+
+IDR_TELMI               ICON                    "res\\icon1.ico"
+
+IDR_QUIX                ICON                    "res\\ico00001.ico"
+
+IDR_UNKNOWN             ICON                    "res\\ico00002.ico"
+
+IDR_OWNMSG              ICON                    "res\\ico00003.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_OPTIONS_PROPERTIES,  VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_FIND,                VIRTKEY, CONTROL, NOINVERT
+    "H",            ID_HIDE,                VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F5,          ID_UPDATEALL,           VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Y",            ID_TX,                  VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_AUTOMSG
+    BUTTON      ID_TELMI
+    BUTTON      ID_QUIX
+    BUTTON      ID_TMOBIL
+    SEPARATOR
+    BUTTON      ID_AUTOBAUD
+    BUTTON      ID_512
+    BUTTON      ID_1200
+    BUTTON      ID_2400
+    SEPARATOR
+    BUTTON      ID_OPTIONS_PROPERTIES
+    BUTTON      ID_TX
+    BUTTON      ID_DCD
+    SEPARATOR
+    BUTTON      ID_STOP
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_LEVELBAR TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_LEVEL0
+    BUTTON      ID_LEVEL0
+    SEPARATOR
+    BUTTON      ID_LEVEL1
+    BUTTON      ID_LEVEL1
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+IDR_LEVELBAR            BITMAP                  "res\\toolbar1.bmp"
+
+IDB_EYES                BITMAP                  "res\\eyes.bmp"
+
+IDB_TLOGO               BITMAP                  "res\\bitmap1.bmp"
+
+IDB_LIGHTBULB           BITMAP                  "res\\litebulb.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TX DIALOG 0, 0, 303, 81
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "POCSAG Paket Senden"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Eingabe der Sendedaten",IDC_STATIC,7,7,230,67
+    LTEXT           "&Adresse:",IDC_STATIC,25,23,28,8
+    EDITTEXT        IDC_ADR,59,20,40,14,ES_AUTOHSCROLL
+    LTEXT           "&Funktionscode:",IDC_STATIC,145,23,48,8
+    COMBOBOX        IDC_FCT,198,20,31,42,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Nachricht:",IDC_STATIC,20,40,33,8
+    EDITTEXT        IDC_MSG,59,37,172,14,ES_AUTOHSCROLL
+    LTEXT           "&Kodiert als:",IDC_STATIC,17,56,36,8
+    COMBOBOX        IDC_ENCODE,59,54,76,49,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Bitrate:",IDC_STATIC,144,56,23,8
+    COMBOBOX        IDC_BITRATE,172,54,58,49,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,246,42,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,246,60,50,14
+END
+
+IDD_SPLASH DIALOGEX 0, 0, 226, 121
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,21,79,181,1
+    LTEXT           "POCSAG Protokoll Monitor ©1997-2009 BayCom GmbH",IDC_STATIC,27,54,177,8
+    LTEXT           "Achtung: Es ist nicht erlaubt kommerzielle Funkrufdienste\r\nauszuwerten! Das Programm darf nur im Amateurfunkdienst \r\neingesetzt werden.",IDC_STATIC,18,89,188,26
+    CTEXT           "Static",IDC_VERSION,55,66,114,8
+    CONTROL         IDD_ENCODER,IDC_STATIC,"Static",SS_BITMAP,90,7,44,39
+END
+
+IDD_DECODER DIALOG 0, 0, 247, 182
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Decoder"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "&Funktionsbits",IDC_STATIC,7,7,233,35
+    LTEXT           "&0",IDC_STATIC,12,23,8,8
+    COMBOBOX        IDC_FCT0,21,21,40,51,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&1",IDC_STATIC,70,23,8,8
+    COMBOBOX        IDC_FCT1,79,21,40,51,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&2",IDC_STATIC,126,23,8,8
+    COMBOBOX        IDC_FCT2,136,21,40,51,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&3",IDC_STATIC,184,23,8,8
+    COMBOBOX        IDC_FCT3,194,21,40,51,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "&Optionen",IDC_STATIC,7,44,233,46
+    LTEXT           "&Bitrate:",IDC_STATIC,13,66,23,8
+    COMBOBOX        IDC_COMBO_BITRATE,42,63,58,50,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Skyper Modus ",IDC_SKYPER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,64,63,10
+    LTEXT           "&Zeichentabelle:",IDC_STATIC,177,57,48,8
+    PUSHBUTTON      "default.tbl",IDC_CHARSET,171,67,63,14
+END
+
+IDD_ENCODER DIALOG 0, 0, 247, 129
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Encoder"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "TX-&Delay",IDC_STATIC,7,7,114,48
+    EDITTEXT        IDC_EDTTXDELAY,19,22,28,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPNTXDELAY,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,52,22,11,14
+    GROUPBOX        "&Leitungen invertieren",IDC_STATIC,124,7,116,48
+    CONTROL         "&Sendedaten",IDC_TXINV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,132,20,55,10
+    CONTROL         "&PTT Signal",IDC_PTTINV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,132,36,51,10
+    CONTROL         IDB_EYES,IDC_STATIC,"Static",SS_BITMAP,86,26,21,10
+END
+
+IDD_HARDWARE DIALOG 0, 0, 247, 188
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Hardware && Co."
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,233,60
+    CONTROL         "&COM Port benutzen",IDC_USECOM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,7,78,10
+    LTEXT           "&Port:",IDC_STATIC,17,28,16,8
+    COMBOBOX        IDC_PORT,58,26,66,50,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Interrupt:",IDC_STATIC,137,28,29,8
+    COMBOBOX        IDC_INT,173,26,64,88,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&RX-Daten:",IDC_STATIC,16,44,34,8
+    COMBOBOX        IDC_RXLINE,58,44,66,56,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Signale &Mithören",IDC_DEBUG2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,137,45,68,10
+    GROUPBOX        "",IDC_STATIC,7,69,233,62
+    CONTROL         "&Soundkarte benutzen",IDC_USESNDCRD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,69,84,10
+    COMBOBOX        IDC_SOUNDCARD,16,90,115,74,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Kanäle:",IDC_STATIC,145,92,25,8
+    COMBOBOX        IDC_CHANNELS,177,90,36,45,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&FIR Filter (Audio Tiefpaß)",IDC_FIRFLT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,112,94,10
+    GROUPBOX        "&Optionen",IDC_STATIC,7,133,233,48
+    LTEXT           "Synchron&wort:",IDC_STATIC,16,148,46,8
+    EDITTEXT        IDC_SYNCWORD,69,145,47,14,ES_AUTOHSCROLL
+    LTEXT           "Standardwert: 0x7CD215D8",IDC_STATIC,133,148,90,8
+    CONTROL         "Fehlerkorr&ektur",IDC_CORR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,165,63,10
+END
+
+IDD_LICENSE DIALOGEX 0, 0, 263, 271
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Lizenzbestimmungen"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "ABLEHNEN",IDCANCEL,206,250,50,14
+    EDITTEXT        IDC_LICENSE,7,68,249,175,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL
+    DEFPUSHBUTTON   "ANNEHMEN",IDOK,7,250,50,14
+    LTEXT           "POC32",IDC_STATIC,120,52,24,8
+    CONTROL         IDD_ENCODER,IDC_STATIC,"Static",SS_BITMAP,109,6,44,39
+END
+
+IDD_STATISTIC DIALOG 0, 0, 266, 186
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Statistik"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Gesamtzahl empfanger Nachrichten..............",IDC_STATIC,7,25,142,8
+    LTEXT           "Static",IDC_MSGNUM,151,25,52,8
+    LTEXT           "Nachrichten mit nicht korrigierbaren Fehlern..",IDC_STATIC,7,38,142,8
+    LTEXT           "Static",IDC_MSGERR,151,38,19,8
+    LTEXT           "Dekodierungsrate..........................................",IDC_STATIC,7,51,142,8
+    LTEXT           "Static",IDC_DECRATE,151,51,19,8
+    LTEXT           "Empfangspufferüberläufe...............................",IDC_STATIC,7,64,142,8
+    LTEXT           "Static",IDC_EXBUFERR,151,64,19,8
+END
+
+IDD_TIP DIALOG 0, 0, 231, 164
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Tip des Tages"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",-1,"Static",SS_BLACKFRAME,12,11,207,123
+    LTEXT           "Some String",IDC_TIPSTRING,26,57,177,66
+    CONTROL         "&Beim Start anzeigen",IDC_STARTUP,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,13,145,85,10
+    PUSHBUTTON      "&Nächster Tip",IDC_NEXTTIP,109,143,50,14,WS_GROUP
+    DEFPUSHBUTTON   "&Schließen",IDOK,168,143,50,14,WS_GROUP
+    CONTROL         "",IDC_BULB,"Static",SS_BITMAP,20,17,190,111
+END
+
+IDD_FILTER DIALOG 0, 0, 247, 182
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Filter"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "&Reguläre Ausdrücke durch Kommata getrennt",IDC_STATIC,7,7,233,79
+    EDITTEXT        IDC_FILTER,13,19,217,61,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "&Aktionen",IDC_STATIC,7,90,233,82
+    LTEXT           "Filterfunktion",IDC_STATIC,13,105,41,8
+    COMBOBOX        IDC_FILTERFCT,62,101,62,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Laden",ID_LOADFILTER,147,100,40,14
+    PUSHBUTTON      "&Speichern",ID_SAVEFILTER,193,100,40,14
+    LTEXT           "Bei Treffer",IDC_STATIC,13,121,34,8
+    CONTROL         "F&enster in den Vordergrund",IDC_TOTOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,62,120,101,10
+    CONTROL         "&Datei ausführen",IDC_STARTPRG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,62,135,66,10
+    PUSHBUTTON      "&Auswählen",IDC_CHOOSEPROGRAM,147,132,40,14
+    EDITTEXT        IDC_PROGRAMNAME,62,152,172,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_LISTMANAGER DIALOG 0, 0, 247, 182
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Listenverwaltung"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "&Listelänge",IDC_STATIC,7,7,233,82
+    CONTROL         "&Sichtbare Liste auf die letzten",IDC_CUTVISLIST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,29,109,10
+    EDITTEXT        IDC_CUTVISLISTNUM,129,27,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,148,27,9,14
+    LTEXT           "Einträge kürzen",IDC_STATIC,161,30,50,8
+    CONTROL         "&Interne Liste auf die letzten",IDC_CUTINTERNALIST,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,56,109,10
+    EDITTEXT        IDC_CUTINTERNALISTNUM,129,54,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,148,54,9,14
+    LTEXT           "Einträge kürzen",IDC_STATIC,161,57,50,8
+    GROUPBOX        "Laden && S&peichern",IDC_STATIC,7,93,240,82
+    CONTROL         "Letzte Liste beim Start &einladen",IDC_LOADLASTLIST,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,115,114,10
+    CONTROL         "&Automatisch speichern nach",IDC_AUTOSAVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,140,109,10
+    EDITTEXT        IDC_AUTOSAVENUM,129,137,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN3,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,147,137,9,14
+    LTEXT           "Minuten",IDC_STATIC,161,140,50,8
+END
+
+IDD_GENERAL DIALOG 0, 0, 247, 183
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Zusätze"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "&Rufwiederholungen",IDC_STATIC,6,6,234,66
+    LTEXT           "&Rufwiederholungen ausblenden:",IDC_STATIC,13,23,103,8
+    COMBOBOX        IDC_ELIMINATECALLS,119,21,111,92,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Zeitspanne:",IDC_STATIC,13,46,38,8
+    EDITTEXT        IDC_TIMESPAN,119,43,33,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,143,43,9,14
+    LTEXT           "Sekunden",IDC_STATIC,155,46,34,8
+    CONTROL         "&Bei neuen Nachrichten Automatisch an das Listenende springen",IDC_AUTOSCROLL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,85,218,10
+    CONTROL         "&TCP/IP Fernzugriff auf Port:",IDC_TCPIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,111,103,10
+    EDITTEXT        IDC_PORT,119,108,36,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "&Passwort für den Fernzugriff",IDC_STATIC,13,132,88,8
+    EDITTEXT        IDC_PASSWORD,119,129,64,14,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_ENTRYPROPERTIES DIALOG 0, 0, 256, 117
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Eigenschaften für Listeneintrag"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "&Zuordnung eines Alias und einer Datei zu einer Pageradresse",IDC_STATIC,7,7,242,82
+    LTEXT           "Adresse:",IDC_STATIC,18,24,28,8
+    EDITTEXT        IDC_ADDRESS,50,22,38,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "&Alias:",IDC_STATIC,18,44,18,8
+    EDITTEXT        IDC_ALIAS,50,42,187,14,ES_AUTOHSCROLL
+    LTEXT           "&Datei:",IDC_STATIC,18,65,20,8
+    EDITTEXT        IDC_PROGRAMNAME2,50,63,94,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Aus&wählen",ID_CHOOSE,155,62,50,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,82,96,50,14
+    PUSHBUTTON      "&Löschen",ID_DELETE,141,96,50,14
+    DEFPUSHBUTTON   "OK",IDOK,199,96,50,14
+END
+
+IDD_MYMESSAGEBOX DIALOG 0, 0, 191, 66
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "POC32 Meldung"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,70,45,50,14
+    EDITTEXT        IDC_EDIT1,7,7,177,32,ES_CENTER | ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+END
+
+IDD_REGISTER DIALOG 0, 0, 173, 102
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Registrierung"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "&Eingabe der Freischaltdaten",IDC_STATIC,7,7,159,60
+    LTEXT           "&Name:",IDC_STATIC,20,24,22,8
+    EDITTEXT        IDC_NAME,52,22,104,14,ES_AUTOHSCROLL
+    LTEXT           "&Code:",IDC_STATIC,22,45,20,8
+    EDITTEXT        IDC_CODE,52,43,104,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Abbrechen",IDCANCEL,58,81,50,14
+    DEFPUSHBUTTON   "OK",IDOK,116,81,50,14
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 198, 172
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION
+CAPTION "Info über POC32"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Lizenz",ID_LICENSE,7,129,48,14
+    PUSHBUTTON      "&Registieren",ID_REGISTER,75,129,48,14
+    PUSHBUTTON      "&Spenden",ID_EUROPOINT,143,129,48,14
+    PUSHBUTTON      "&Update?",ID_GOWWW,7,150,48,14
+    PUSHBUTTON      "&Feedback!",ID_FEEDBACK,75,150,48,14
+    DEFPUSHBUTTON   "&OK",IDOK,143,150,48,14,WS_GROUP
+    LTEXT           "POC32",IDC_STATIC,7,7,24,8,SS_NOPREFIX
+    EDITTEXT        IDC_VERSION,33,7,133,12,ES_READONLY | NOT WS_BORDER | WS_GROUP | NOT WS_TABSTOP,WS_EX_TRANSPARENT
+    CTEXT           "POCSAG Protokoll Monitor,\r\n©1996-2018 BayCom GmbH",IDC_STATIC,31,84,129,28
+    EDITTEXT        IDC_REGISTERED,27,110,138,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | WS_GROUP | NOT WS_TABSTOP
+    CONTROL         IDD_ENCODER,IDC_STATIC,"Static",SS_BITMAP,76,29,44,39
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_TX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 296
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_SPLASH, DIALOG
+    BEGIN
+        RIGHTMARGIN, 224
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_DECODER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        VERTGUIDE, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_ENCODER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_HARDWARE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_LICENSE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 264
+    END
+
+    IDD_STATISTIC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 259
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_TIP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_FILTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+        HORZGUIDE, 114
+    END
+
+    IDD_LISTMANAGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+        HORZGUIDE, 38
+        HORZGUIDE, 64
+        HORZGUIDE, 148
+    END
+
+    IDD_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 240
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_ENTRYPROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 110
+    END
+
+    IDD_MYMESSAGEBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_REGISTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 166
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 191
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_TX DLGINIT
+BEGIN
+    IDC_FCT, 0x403, 2, 0
+0x0030, 
+    IDC_FCT, 0x403, 2, 0
+0x0031, 
+    IDC_FCT, 0x403, 2, 0
+0x0032, 
+    IDC_FCT, 0x403, 2, 0
+0x0033, 
+    IDC_ENCODE, 0x403, 11, 0
+0x754e, 0x2072, 0x6950, 0x7065, 0x6e65, "\000" 
+    IDC_ENCODE, 0x403, 10, 0
+0x754e, 0x656d, 0x6972, 0x6373, 0x0068, 
+    IDC_ENCODE, 0x403, 15, 0
+0x6c41, 0x6870, 0x6e61, 0x6d75, 0x7265, 0x7369, 0x6863, "\000" 
+    IDC_BITRATE, 0x403, 11, 0
+0x3432, 0x3030, 0x4220, 0x7469, 0x732f, "\000" 
+    IDC_BITRATE, 0x403, 11, 0
+0x3231, 0x3030, 0x4220, 0x7469, 0x732f, "\000" 
+    IDC_BITRATE, 0x403, 10, 0
+0x3135, 0x2032, 0x6942, 0x2f74, 0x0073, 
+    0
+END
+
+IDD_DECODER DLGINIT
+BEGIN
+    IDC_FCT0, 0x403, 5, 0
+0x6542, 0x7065, "\000" 
+    IDC_FCT0, 0x403, 4, 0
+0x754e, 0x006d, 
+    IDC_FCT0, 0x403, 6, 0
+0x6c41, 0x6870, 0x0061, 
+    IDC_FCT0, 0x403, 5, 0
+0x7541, 0x6f74, "\000" 
+    IDC_FCT0, 0x403, 11, 0
+0x6749, 0x6f6e, 0x6972, 0x7265, 0x6e65, "\000" 
+    IDC_FCT1, 0x403, 5, 0
+0x6542, 0x7065, "\000" 
+    IDC_FCT1, 0x403, 4, 0
+0x754e, 0x006d, 
+    IDC_FCT1, 0x403, 6, 0
+0x6c41, 0x6870, 0x0061, 
+    IDC_FCT1, 0x403, 5, 0
+0x7541, 0x6f74, "\000" 
+    IDC_FCT1, 0x403, 11, 0
+0x6749, 0x6f6e, 0x6972, 0x7265, 0x6e65, "\000" 
+    IDC_FCT2, 0x403, 5, 0
+0x6542, 0x7065, "\000" 
+    IDC_FCT2, 0x403, 4, 0
+0x754e, 0x006d, 
+    IDC_FCT2, 0x403, 6, 0
+0x6c41, 0x6870, 0x0061, 
+    IDC_FCT2, 0x403, 5, 0
+0x7541, 0x6f74, "\000" 
+    IDC_FCT2, 0x403, 11, 0
+0x6749, 0x6f6e, 0x6972, 0x7265, 0x6e65, "\000" 
+    IDC_FCT3, 0x403, 5, 0
+0x6542, 0x7065, "\000" 
+    IDC_FCT3, 0x403, 4, 0
+0x754e, 0x006d, 
+    IDC_FCT3, 0x403, 6, 0
+0x6c41, 0x6870, 0x0061, 
+    IDC_FCT3, 0x403, 5, 0
+0x7541, 0x6f74, "\000" 
+    IDC_FCT3, 0x403, 11, 0
+0x6749, 0x6f6e, 0x6972, 0x7265, 0x6e65, "\000" 
+    IDC_COMBO_BITRATE, 0x403, 11, 0
+0x3432, 0x3030, 0x4220, 0x7469, 0x732f, "\000" 
+    IDC_COMBO_BITRATE, 0x403, 11, 0
+0x3231, 0x3030, 0x4220, 0x7469, 0x732f, "\000" 
+    IDC_COMBO_BITRATE, 0x403, 11, 0
+0x3135, 0x2032, 0x6942, 0x2f74, 0x2073, "\000" 
+    IDC_COMBO_BITRATE, 0x403, 5, 0
+0x7541, 0x6f74, "\000" 
+    0
+END
+
+IDD_HARDWARE DLGINIT
+BEGIN
+    IDC_PORT, 0x403, 13, 0
+0x7830, 0x4633, 0x2038, 0x4328, 0x4d4f, 0x2931, "\000" 
+    IDC_PORT, 0x403, 13, 0
+0x7830, 0x4632, 0x2038, 0x4328, 0x4d4f, 0x2932, "\000" 
+    IDC_PORT, 0x403, 13, 0
+0x7830, 0x4533, 0x2038, 0x4328, 0x4d4f, 0x2933, "\000" 
+    IDC_PORT, 0x403, 13, 0
+0x7830, 0x4532, 0x2038, 0x4328, 0x4d4f, 0x2934, "\000" 
+    IDC_INT, 0x403, 15, 0
+0x3330, 0x2820, 0x4f43, 0x204d, 0x2032, 0x207c, 0x2934, "\000" 
+    IDC_INT, 0x403, 15, 0
+0x3430, 0x2820, 0x4f43, 0x204d, 0x2031, 0x207c, 0x2933, "\000" 
+    IDC_INT, 0x403, 5, 0
+0x3530, 0x2020, "\000" 
+    IDC_INT, 0x403, 3, 0
+0x3730, "\000" 
+    IDC_INT, 0x403, 3, 0
+0x3930, "\000" 
+    IDC_INT, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_INT, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_INT, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_RXLINE, 0x403, 4, 0
+0x5443, 0x0053, 
+    IDC_RXLINE, 0x403, 4, 0
+0x5344, 0x0052, 
+    IDC_CHANNELS, 0x403, 2, 0
+0x0031, 
+    IDC_CHANNELS, 0x403, 2, 0
+0x0032, 
+    0
+END
+
+IDD_FILTER DLGINIT
+BEGIN
+    IDC_FILTERFCT, 0x403, 12, 0
+0x654b, 0x6e69, 0x4620, 0x6c69, 0x6574, 0x0072, 
+    IDC_FILTERFCT, 0x403, 12, 0
+0x7544, 0x6372, 0x6c68, 0x7361, 0x6573, 0x006e, 
+    IDC_FILTERFCT, 0x403, 13, 0
+0x755a, 0xfc72, 0x6b63, 0x6577, 0x7369, 0x6e65, "\000" 
+    IDC_FILTERFCT, 0x403, 1, 0
+"\000" 
+    0
+END
+
+IDD_GENERAL DLGINIT
+BEGIN
+    IDC_ELIMINATECALLS, 0x403, 6, 0
+0x654b, 0x6e69, 0x0065, 
+    IDC_ELIMINATECALLS, 0x403, 18, 0
+0x694d, 0x2074, 0x6c67, 0x6965, 0x6863, 0x6d65, 0x5420, 0x7865, 0x0074, 
+
+    IDC_ELIMINATECALLS, 0x403, 28, 0
+0x694d, 0x2074, 0x6c67, 0x6965, 0x6863, 0x6d65, 0x5420, 0x7865, 0x2074, 
+0x2026, 0x6441, 0x6572, 0x7373, 0x0065, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&Datei"
+    BEGIN
+        MENUITEM "&Neu\tStrg+N",                ID_FILE_NEW
+        MENUITEM "Ö&ffnen...\tStrg+O",          ID_FILE_OPEN
+        MENUITEM "&Speichern\tStrg+S",          ID_FILE_SAVE
+        MENUITEM "Speichern &unter...",         ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Drucken...\tStrg+P",         ID_FILE_PRINT
+        MENUITEM "Sei&tenansicht",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "Drucker&einrichtung...",      ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Letzte Datei",                ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Beenden",                    ID_APP_EXIT
+    END
+    POPUP "&Bearbeiten"
+    BEGIN
+        MENUITEM "&Kopieren\tStrg+C",           ID_EDIT_COPY
+        MENUITEM SEPARATOR
+        MENUITEM "&Suchen\tStrg+F",             ID_FIND
+    END
+    POPUP "&Ansicht"
+    BEGIN
+        MENUITEM "&Symbolleiste",               ID_VIEW_TOOLBAR
+        MENUITEM "S&tatusleiste",               ID_VIEW_STATUS_BAR
+        MENUITEM "&Pegelleiste",                ID_LEVEL_VIEW
+        MENUITEM SEPARATOR
+        MENUITEM "S&chriftart",                 ID_CHOOSEFONT
+        MENUITEM SEPARATOR
+        MENUITEM "&Always On Top",              ID_AOT
+        MENUITEM "Fenster &verstecken",         ID_HIDE
+        MENUITEM "A&ktualisieren\tF5",          ID_UPDATEALL
+    END
+    POPUP "&Optionen"
+    BEGIN
+        POPUP "&POCSAG"
+        BEGIN
+            MENUITEM "&Eigenschaften\tStrg+E",      ID_SETTINGS
+            MENUITEM "&Senden\tStrg+Y",             ID_TX
+        END
+        MENUITEM "&Einstellungen",              ID_OPTIONS_PROPERTIES
+    END
+    POPUP "&Hilfe"
+    BEGIN
+        MENUITEM "Tip des Tages...",            CG_IDS_TIPOFTHEDAY
+        MENUITEM SEPARATOR
+        MENUITEM "Inf&o über poc32...",         ID_APP_ABOUT
+        MENUITEM "POC32 &Update",               ID_GOWWW
+        MENUITEM "POC32 &Feedback",             ID_FEEDBACK
+        MENUITEM "POC32 &Lizenzbedingungen",    ID_LICENSE
+        MENUITEM "POC32 &Registrieren",         ID_REGISTER
+    END
+END
+
+IDR_CONTEXT MENU
+BEGIN
+    POPUP "Context"
+    BEGIN
+        MENUITEM "&Kopieren",                   ID_EDIT_COPY
+        MENUITEM "&Löschen",                    ID_DELETECMD
+        MENUITEM "&Suchen",                     ID_FIND
+        MENUITEM "Sen&den",                     ID_TX
+        MENUITEM "&Eigenschaften",              ID_ENTRYPROPERTIES
+        MENUITEM "&Beenden",                    ID_FILE_CLOSE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "POCSAG Protokoll Monitor\n\nPoc32\nDateityp Poc32 (*.poc)\n.poc\nPoc32.Document\nPoc32 Document"
+    IDS_PROPTITLE           "Eigenschaften"
+    IDS_APPENDFILE          "An bestehende Daten anhängen?"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "poc32"
+    AFX_IDS_IDLEMESSAGE     "Bereit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "ER"
+    ID_INDICATOR_CAPS       "UF"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "RF"
+    ID_INDICATOR_OVR        "ÜB"
+    ID_INDICATOR_REC        "MA"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Erstellt ein neues Dokument.\nNeu"
+    ID_FILE_OPEN            "Öffnet ein bestehendes Dokument.\nÖffnen"
+    ID_FILE_CLOSE           "Schließt das aktive Dokument.\nSchließen"
+    ID_FILE_SAVE            "Speichert das aktive Dokument.\nSpeichern"
+    ID_FILE_SAVE_AS         "Speichert das aktive Dokument unter neuem Namen.\nSpeichern unter"
+    ID_FILE_PAGE_SETUP      "Ändert die Druckoptionen.\nSeite einrichten"
+    ID_FILE_PRINT_SETUP     "Ändert den Drucker und die Druckoptionen.\nDruckereinrichtung"
+    ID_FILE_PRINT           "Druckt das aktive Dokument.\nDrucken"
+    ID_FILE_PRINT_PREVIEW   "Zeigt ganze Seiten an.\nSeitenansicht"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Zeigt Programm-Informationen, Versionsnummer und Copyright an.\nInfo"
+    ID_APP_EXIT             "Verläßt die Anwendung; fragt, ob Dokumente gespeichert werden sollen.\nBeenden"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE2       "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE3       "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE4       "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE5       "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE6       "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE7       "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE8       "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE9       "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE10      "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE11      "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE12      "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE13      "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE14      "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE15      "Öffnet dieses Dokument."
+    ID_FILE_MRU_FILE16      "Öffnet dieses Dokument."
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Wechselt zum nächsten Fensterausschnitt.\nNächster Ausschnitt"
+    ID_PREV_PANE            "Springt zum vorherigen Fensterausschnitt zurück.\nVorheriger Ausschnitt"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Teilt das aktive Fenster in Ausschnitte.\nTeilen"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Löscht die Markierung.\nLöschen"
+    ID_EDIT_CLEAR_ALL       "Löscht alles.\nAlles löschen"
+    ID_EDIT_COPY            "Kopiert die Markierung und überträgt sie in die Zwischenablage.\nKopieren"
+    ID_EDIT_CUT             "Entfernt die Markierung und überträgt sie in die Zwischenablage.\nAusschneiden"
+    ID_EDIT_FIND            "Sucht den angegebenen Text.\nSuchen"
+    ID_EDIT_PASTE           "Fügt den Inhalt der Zwischenablage ein.\nEinfügen"
+    ID_EDIT_REPEAT          "Wiederholt die letzte Aktion.\nWiederholen"
+    ID_EDIT_REPLACE         "Ersetzt einen bestimmten Text durch einen anderen.\nErsetzen"
+    ID_EDIT_SELECT_ALL      "Markiert das gesamte Dokument.\nAlles markieren"
+    ID_EDIT_UNDO            "Macht die letzte Aktion rückgängig.\nRückgängig"
+    ID_EDIT_REDO            "Wiederholt die vorher rückgängig gemachte Aktion.\nWiederherstellen"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Blendet die Symbolleiste ein oder aus.\nSymbolleiste ein-/ausschalten"
+    ID_VIEW_STATUS_BAR      "Blendet die Statusleiste ein oder aus.\nStatusleiste ein-/ausschalten"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Ändert die Fenstergröße."
+    AFX_IDS_SCMOVE          "Ändert die Position des Fensters."
+    AFX_IDS_SCMINIMIZE      "Verkleinert das Fenster zu einem Symbol."
+    AFX_IDS_SCMAXIMIZE      "Vergrößert das Fenster zu voller Größe."
+    AFX_IDS_SCNEXTWINDOW    "Wechselt zum nächsten Dokumentfenster."
+    AFX_IDS_SCPREVWINDOW    "Wechselt zum vorherigen Dokumentfenster."
+    AFX_IDS_SCCLOSE         "Schließt das aktive Fenster und fordert zur Dokumentspeicherung auf."
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Stellt das Fenster in seiner normalen Größe wieder her."
+    AFX_IDS_SCTASKLIST      "Aktiviert die Task-Liste."
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Beendet die Seitenansicht.\nSeitenansicht beenden"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_NUMBER              " "
+    IDS_TIME                "Zeit"
+    IDS_TYPE                "Typ"
+    IDS_BITRATE             "Bit/s"
+    IDS_ADDRESS             "Adresse"
+    IDS_FUNC                "Funktion"
+    IDS_MSG                 "Nachricht"
+    IDS_NOMATCHES           "Keine (weiteren) Vorkommnisse gefunden!"
+    IDS_NOCLIPBRD           "Zwischenablage konnte nicht geöffnet werden."
+    IDS_NOCLPCPY            "Es konnten keine Daten auf die Zwischenablage kopiert werden."
+END
+
+STRINGTABLE
+BEGIN
+    ID_TX                   "Aussendung starten.\nSenden"
+    ID_TMOBIL               "Schaltet auf TMOBIL Modus.\nTMOBIL"
+    ID_TELMI                "Schaltet auf TelMI Modus.\nTelMI"
+    ID_QUIX                 "Schaltet auf QUIX Modus.\nQUIX"
+    ID_SETTINGS             "Eigenschaften des POCSAG Protokolls.\nEigenschaften"
+    ID_DCD                  "Leuchtet auf, sobald ein Signal dekodiert werden kann.\nDCD"
+    ID_1200                 "Schaltet auf 1200Bit/s um.\n1200Bit/s"
+END
+
+STRINGTABLE
+BEGIN
+    ID_2400                 "Schaltet auf 2400Bit/s um.\n2400Bit/s"
+    ID_512                  "Schaltet auf 512Bit/s um.\n512Bit/s"
+    ID_FIND                 "Im Monitorfenster nach Text suchen."
+    ID_AUTOBAUD             "Die Bitrate automatisch erkennen.\nAutomatische Bitratenerkennung"
+    ID_AUTOMSG              "Automatische Pakettyperkennung.\nAuto Messagetype"
+    ID_STOP                 "Ausgabe stoppen.\nStop!"
+    ID_LEVEL                "Level Meter."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MONPRT              "POCSAG Monitorausdruck"
+    IDS_MONPRTFILE          "Datei %s"
+    IDS_MONPRTPAGE          "Seite %d"
+    IDS_PORTERR             "Port und/oder Interruptzuweisung schlug fehl!\r\nBitte Treiberinstallation überprüfen!"
+    IDS_NOVXD               "Achtung: Die Datei POC.VXD wurde nicht gefunden!\r\nBitte Treiber installieren!"
+    IDS_WRONGVXD            "Die Gerätetreiberversion ist veraltet - bitte neuen installieren!"
+    IDS_STORING             "Dokument speichern"
+    IDS_LOADING             "Dokument laden"
+    IDS_UPDLIST             "Erstelle Liste"
+    IDS_FLTACT              "Bitte nicht vergessen!\r\n\r\nEin Filter wurde eingestellt."
+    IDS_NOSEL               "Es wurde kein Eintrag ausgewählt:\nSollen alle Einträge auf die Zwischenablage kopiert werden?"
+    IDS_NOITEMS             "Im Monitorfenster befinden sich keine Einträge!"
+    IDS_FMTERR              "Formatfehler in Datei bei Zeile %d!\n Weiterladen oder Abbrechen?"
+    IDS_SYNCERR             "Das eingegebene Synchronwort ist ungültig!"
+    IDS_SOURCE              "Quelle"
+    IDS_WAVERR              "Die Soundkarte kann nicht angesprochen werden.\r\nEntweder ein anderes Gerät greift darauf zu oder sie unterstützt den Abtastmodus nicht."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_WAITSND             "Warte auf Soundkarte..."
+    IDS_DORX                "Empfange Daten...."
+    ID_TESTID               "Test.\nTest!"
+    ID_LEVEL0               "Aussteuerungsanzeige für den linken Kanal.\nPegel links"
+    ID_LEVEL1               "Aussteuerungsanzeige für den rechten Kanal.\nPegel rechts"
+    IDS_LICSTR1             "POC32 ©1997-2018 BayCom GmbH - Alle Rechte vorbehalten\r\n\r\nBeim Klicken auf ""ANNEHMEN"" stimmen Sie gleichzeitig den unten aufgeführten Lizenzbestimmungen für POC32 zu und verpflichten sich zu deren Einhaltung. Wenn Sie mit den Lizenzbestimmungen nicht einverstanden sind,""klicken Sie bitte auf ""ABLEHNEN"".\r\n\r\nPOC32 darf nur unter folgenden Bedingungen eingesetzt werden:\r\n\r\n1. Diese POC32 Kopie ist ausschließlich zur nichtkommerziellen, privaten Verwendung bestimmt. Alle anderen Anwendungen müssen explizit beim o.g. Autor genehmigt werden.\r\n\r\n2. POC32 darf nur auf den Frequenzen des Amateurfunkdienstes betrieben werden.\r\n\r\n3. Die Weitergabe des Programmes ist nur unter der Bedingung gestattet, daß keine Dateien des Archives verändert oder gelöscht werden.\r\n\r\n4. Der Autor übernimmt keinerlei Verantwortung für eventuelle Schäden an Soft- und Hardware.\r\n\r\n"
+    IDS_LICSTR2             "5. Für die Einhaltung aller geltenden Gesetze beim Betrieb von POC32 ist der Benutzer zuständig.\r\n\r\nFolgende Bezeichnungen und die damit assoziierten Logos sind eingetragene Warenzeichen:\r\n\r\nCityruf, Scall, Skyper, TMOBIL der Deutschen Telekom A.G.\r\n\r\nQuix der Miniruf GmbH\r\n\r\nTelMI der Deutschen Funkruf GmbH."
+    IDS_WNDTOP              "Das POC32 Fenster sichtbar machen."
+    IDS_NOFILE              "Die Zeichentabelle %s kann nicht geöffnet werden."
+    IDS_TBLFILE             "Zeichensatz-Datei (*.tbl)"
+    IDS_NODEFASSOC          "Es existiert keine Standardverknüpfung mit Internetadressen."
+    IDS_PROPTITLEGENERAL    "Allgemeine Einstellungen"
+    IDS_ALIAS               "Alias"
+    IDS_MSGCNT              "Nachrichten: 000000 / 000000"
+    IDS_UPTIME              "Uptime: 000d 00h 00m"
+    IDS_UPTIME_DAY          "Uptime: %Hh %Mm"
+END
+
+STRINGTABLE
+BEGIN
+    ID_LEVEL_VIEW           "Pegel Anzeige (Soundkarte)."
+    ID_AOT                  "Immer Oben ... typisch männlich?"
+    ID_HIDE                 "Fenster beim Minimieren verstecken."
+    ID_CHOOSEFONT           "Um den Zeichensatz auszuwählen."
+    ID_GOWWW                "Zur POC32 Homepage im WWW gehen."
+    ID_FEEDBACK             "Email an poc32@baycom.de senden."
+    ID_LICENSE              "Hier sind die POC32 Lizenzbedinungen nachzulesen."
+    ID_OPTIONS_PROPERTIES   "Allgemeine Einstellungen der Software."
+    ID_OPTIONS_FLEX_PROPERTIES "Eigenschaften des FLEX  Protokolls."
+END
+
+STRINGTABLE
+BEGIN
+    CG_IDS_TIPOFTHEDAY      "Einen Tagestip anzeigen"
+    CG_IDS_TIPOFTHEDAYMENU  "Ti&p des Tages..."
+    CG_IDS_DIDYOUKNOW       "Wußten Sie schon..."
+    CG_IDS_FILE_ABSENT      "Die Tips Datei ist im angegebenen Verzeichnis nicht auffindbar"
+    CG_IDP_FILE_CORRUPT     "Kann die Tips Datei nicht lesen"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ENTRYPROPERTIES      "Eigenschaften dieses Eintrags ändern."
+    ID_REGISTER             "Nach der Registrierung steht das Programm in seinem vollem Leistungsumfang zur Verfügung."
+    ID_DELETECMD            "Eintrag löschen."
+    ID_UPDATEALL            "Liste neu aufbauen."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_UPTIME_DAYS         "Uptime: %Dd %Hh %Mm"
+    IDS_MSGS                "Nachrichten: "
+    IDS_DELETE              "Listeneinträge wirklich löschen?"
+    IDS_LISTEN_INUSE        "TCP/IP Port bereits anderweitig in Verwendung."
+    IDS_LISTEN_ERROR        "TCP/IP Port konnte nicht geöffnet werden."
+    IDS_CANT_LISTEN         "TCP/IP Sockets konnten nicht initialisiert werden."
+    IDS_REGISTERED          "Das Programm ist nun registriert!"
+END
+
+STRINGTABLE
+BEGIN
+    IDD_REGISTER            "POC32 Registrieren, damit die nervigen Sharewaremeldungen ein Ende haben..."
+END
+
+#endif    // Deutsch (Deutschland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Englisch (USA) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 198, 172
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION
+CAPTION "About POC32"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&License",ID_LICENSE,7,129,48,14
+    PUSHBUTTON      "&Register",ID_REGISTER,75,129,48,14
+    PUSHBUTTON      "&Donate",ID_EUROPOINT,143,129,48,14
+    PUSHBUTTON      "&Update?",ID_GOWWW,7,150,48,14
+    PUSHBUTTON      "&Feedback!",ID_FEEDBACK,75,150,48,14
+    DEFPUSHBUTTON   "&OK",IDOK,143,150,48,14,WS_GROUP
+    LTEXT           "POC32",IDC_STATIC,7,7,24,8,SS_NOPREFIX
+    EDITTEXT        IDC_VERSION,33,7,133,12,ES_READONLY | NOT WS_BORDER | WS_GROUP | NOT WS_TABSTOP,WS_EX_TRANSPARENT
+    CTEXT           "POCSAG Protocol Monitor,\r\n©1996-2018 BayCom GmbH",IDC_STATIC,31,84,129,28
+    EDITTEXT        IDC_REGISTERED,27,110,138,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | WS_GROUP | NOT WS_TABSTOP
+    CONTROL         IDD_ENCODER,IDC_STATIC,"Static",SS_BITMAP,76,29,44,39
+END
+
+IDD_TX DIALOG 0, 0, 303, 81
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Transmit POCSAG Packet "
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Enter Transmission Data",IDC_STATIC,7,7,230,67
+    LTEXT           "&Address:",IDC_STATIC,25,23,28,8
+    EDITTEXT        IDC_ADR,59,20,40,14,ES_AUTOHSCROLL
+    LTEXT           "&Functioncode:",IDC_STATIC,145,23,48,8
+    COMBOBOX        IDC_FCT,198,20,31,42,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Message:",IDC_STATIC,20,40,33,8
+    EDITTEXT        IDC_MSG,59,37,172,14,ES_AUTOHSCROLL
+    LTEXT           "&Coded as:",IDC_STATIC,17,56,36,8
+    COMBOBOX        IDC_ENCODE,59,54,76,49,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Bitrate:",IDC_STATIC,144,56,23,8
+    COMBOBOX        IDC_BITRATE,172,54,58,49,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,246,42,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,246,60,50,14
+END
+
+IDD_TIP DIALOG 0, 0, 231, 164
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tip of the Day"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",-1,"Static",SS_BLACKFRAME,12,11,207,123
+    LTEXT           "Some String",IDC_TIPSTRING,28,63,177,60
+    CONTROL         "&Show Tips on StartUp",IDC_STARTUP,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,13,146,85,10
+    PUSHBUTTON      "&Next Tip",IDC_NEXTTIP,109,143,50,14,WS_GROUP
+    DEFPUSHBUTTON   "&Close",IDOK,168,143,50,14,WS_GROUP
+    CONTROL         "",IDC_BULB,"Static",SS_BITMAP,20,17,190,111
+END
+
+IDD_STATISTIC DIALOG 0, 0, 266, 186
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Statistic"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Number of received messages.......................",IDC_STATIC,7,25,142,8
+    LTEXT           "Static",IDC_MSGNUM,151,25,52,8
+    LTEXT           "Number of incorrect messages.......................",IDC_STATIC,7,38,142,8
+    LTEXT           "Static",IDC_MSGERR,151,38,19,8
+    LTEXT           "RX-buffer overruns.........................................",IDC_STATIC,7,64,142,8
+    LTEXT           "Static",IDC_EXBUFERR,151,64,19,8
+    LTEXT           "Decoder success rate....................................",IDC_STATIC,7,51,142,8
+    LTEXT           "Static",IDC_DECRATE,151,51,19,8
+END
+
+IDD_SPLASH DIALOGEX 0, 0, 200, 121
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,10,78,181,1
+    LTEXT           "POCSAG Protocol Monitor ©1997-2009 BayCom GmbH",IDC_STATIC,8,54,185,8
+    LTEXT           "This software is only for non-commercial usage in amateur\r\nradio environment and on those frequencies. It is neither\r\nintended nor allowed to decode and decrypt commercial\r\ninformation and pager services!",IDC_STATIC,10,82,182,32
+    CTEXT           "Static",IDC_VERSION,44,65,114,8
+    CONTROL         IDD_ENCODER,IDC_STATIC,"Static",SS_BITMAP,77,3,44,39
+END
+
+IDD_REGISTER DIALOG 0, 0, 173, 102
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Register"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "&Enter registration codes",IDC_STATIC,7,7,159,60
+    LTEXT           "&Name:",IDC_STATIC,20,24,22,8
+    EDITTEXT        IDC_NAME,52,22,104,14,ES_AUTOHSCROLL
+    LTEXT           "&Code:",IDC_STATIC,22,45,20,8
+    EDITTEXT        IDC_CODE,52,43,104,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,58,81,50,14
+    DEFPUSHBUTTON   "OK",IDOK,116,81,50,14
+END
+
+IDD_MYMESSAGEBOX DIALOG 0, 0, 191, 66
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "POC32 Message"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,70,45,50,14
+    EDITTEXT        IDC_EDIT1,7,7,177,32,ES_CENTER | ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+END
+
+IDD_LISTMANAGER DIALOG 0, 0, 247, 182
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "List Management"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "&Length of List",IDC_STATIC,7,7,233,82
+    CONTROL         "Cut &visible list to last",IDC_CUTVISLIST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,29,79,10
+    EDITTEXT        IDC_CUTVISLISTNUM,129,27,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,148,27,9,14
+    LTEXT           "entries",IDC_STATIC,161,30,22,8
+    CONTROL         "Cut &internal list to last",IDC_CUTINTERNALIST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,56,109,10
+    EDITTEXT        IDC_CUTINTERNALISTNUM,129,54,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,148,54,9,14
+    LTEXT           "entries",IDC_STATIC,161,57,22,8
+    GROUPBOX        "Load && S&ave",IDC_STATIC,7,93,240,82
+    CONTROL         "Load last list at startup",IDC_LOADLASTLIST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,115,86,10
+    CONTROL         "Save &automatically after",IDC_AUTOSAVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,140,109,10
+    EDITTEXT        IDC_AUTOSAVENUM,129,137,28,14,ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN3,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,147,137,9,14
+    LTEXT           "minutes",IDC_STATIC,161,140,50,8
+END
+
+IDD_LICENSE DIALOGEX 0, 0, 262, 269
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "License Agreement"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "DISAGREE",IDCANCEL,205,248,50,14
+    EDITTEXT        IDC_LICENSE,7,65,248,176,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL
+    DEFPUSHBUTTON   "ACCEPT",IDOK,7,248,50,14
+    LTEXT           "POC32",IDC_STATIC,117,52,24,8
+    CONTROL         IDD_ENCODER,IDC_STATIC,"Static",SS_BITMAP,108,6,44,39
+END
+
+IDD_HARDWARE DIALOG 0, 0, 247, 189
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Hardware && Co."
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,233,60
+    CONTROL         "Enable &COM Port",IDC_USECOM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,7,78,10
+    LTEXT           "&Port:",IDC_STATIC,17,28,16,8
+    COMBOBOX        IDC_PORT,58,26,66,50,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Interrupt:",IDC_STATIC,137,28,29,8
+    COMBOBOX        IDC_INT,173,26,64,88,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&RX-Data",IDC_STATIC,16,44,34,8
+    COMBOBOX        IDC_RXLINE,58,44,66,56,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Monitor Signals",IDC_DEBUG2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,137,45,68,10
+    GROUPBOX        "",IDC_STATIC,7,69,233,63
+    CONTROL         "Enable &Soundcard",IDC_USESNDCRD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,69,84,10
+    COMBOBOX        IDC_SOUNDCARD,16,90,118,74,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "C&hannels:",IDC_STATIC,143,92,32,8
+    COMBOBOX        IDC_CHANNELS,183,90,35,45,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&FIR Filter (audio lowpass)",IDC_FIRFLT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,112,95,10
+    GROUPBOX        "&Options",IDC_STATIC,7,134,233,48
+    LTEXT           "Synchronous&word:",IDC_STATIC,16,147,60,8
+    EDITTEXT        IDC_SYNCWORD,81,144,47,14,ES_AUTOHSCROLL
+    LTEXT           "Default value: 0x7CD215D8",IDC_STATIC,139,148,92,8
+    CONTROL         "&Error correction",IDC_CORR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,165,64,10
+END
+
+IDD_GENERAL DIALOG 0, 0, 247, 183
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "&Repeated Calls",IDC_STATIC,6,6,234,66
+    LTEXT           "Blank out &repeated calls:",IDC_STATIC,13,23,79,8
+    COMBOBOX        IDC_ELIMINATECALLS,119,21,111,92,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Timespan:",IDC_STATIC,13,46,34,8
+    EDITTEXT        IDC_TIMESPAN,119,43,33,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,143,43,9,14
+    LTEXT           "seconds",IDC_STATIC,155,46,28,8
+    CONTROL         "&Jump to end of list with every new message",IDC_AUTOSCROLL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,85,152,10
+    CONTROL         "TCP/IP Remote Access on Port:",IDC_TCPIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,111,119,10
+    EDITTEXT        IDC_PORT,133,108,36,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Remote access &password",IDC_STATIC,13,132,82,8
+    EDITTEXT        IDC_PASSWORD,133,129,64,14,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_FILTER DIALOG 0, 0, 247, 182
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Filter"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "&Regular expressions delimited by commas",IDC_STATIC,7,7,233,79
+    EDITTEXT        IDC_FILTER,13,19,217,61,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "&Actions",IDC_STATIC,7,90,233,82
+    LTEXT           "Filterfunction",IDC_STATIC,13,105,41,8
+    COMBOBOX        IDC_FILTERFCT,62,101,62,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Load",ID_LOADFILTER,147,100,37,14
+    PUSHBUTTON      "&Save",ID_SAVEFILTER,193,100,37,14
+    LTEXT           "@ Hit",IDC_STATIC,13,121,19,8
+    CONTROL         "Put window into foreground",IDC_TOTOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,62,120,102,10
+    CONTROL         "&Execute file",IDC_STARTPRG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,62,135,53,10
+    PUSHBUTTON      "&Choose",IDC_CHOOSEPROGRAM,147,132,37,14
+    EDITTEXT        IDC_PROGRAMNAME,62,152,172,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_ENTRYPROPERTIES DIALOG 0, 0, 256, 117
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Listentry Properties "
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "&Assign an alias to a pageraddress (RIC)",IDC_STATIC,7,7,242,82
+    LTEXT           "Address:",IDC_STATIC,18,24,28,8
+    EDITTEXT        IDC_ADDRESS,50,22,38,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "&Alias:",IDC_STATIC,18,44,18,8
+    EDITTEXT        IDC_ALIAS,50,42,187,14,ES_AUTOHSCROLL
+    LTEXT           "&File:",IDC_STATIC,18,65,14,8
+    EDITTEXT        IDC_PROGRAMNAME2,50,63,94,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Choose",ID_CHOOSE,155,62,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,82,96,50,14
+    PUSHBUTTON      "&Remove",ID_DELETE,141,96,50,14
+    DEFPUSHBUTTON   "OK",IDOK,199,96,50,14
+END
+
+IDD_ENCODER DIALOG 0, 0, 247, 122
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Encoder"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "TX-&Delay",IDC_STATIC,7,7,116,51
+    EDITTEXT        IDC_EDTTXDELAY,19,22,28,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPNTXDELAY,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,52,22,11,14
+    GROUPBOX        "&Invert Lines",IDC_STATIC,125,7,115,51
+    CONTROL         "&Transmit Data",IDC_TXINV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,133,22,60,10
+    CONTROL         "&PTT Signal",IDC_PTTINV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,133,39,51,10
+    CONTROL         IDB_EYES,IDC_STATIC,"Static",SS_BITMAP,86,26,21,10
+END
+
+IDD_DECODER DIALOG 0, 0, 247, 182
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Decoder"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "&Functionbits",IDC_STATIC,7,7,233,35
+    LTEXT           "&0",IDC_STATIC,12,23,8,8
+    COMBOBOX        IDC_FCT0,21,21,40,51,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&1",IDC_STATIC,70,23,8,8
+    COMBOBOX        IDC_FCT1,79,21,40,51,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&2",IDC_STATIC,126,23,8,8
+    COMBOBOX        IDC_FCT2,136,21,40,51,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&3",IDC_STATIC,184,23,8,8
+    COMBOBOX        IDC_FCT3,194,21,40,51,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "&Options",IDC_STATIC,7,44,233,46
+    LTEXT           "&Bitrate:",IDC_STATIC,13,66,23,8
+    COMBOBOX        IDC_COMBO_BITRATE,42,63,58,50,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Skyper Mode ",IDC_SKYPER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,64,60,10
+    LTEXT           "Charactertable",IDC_STATIC,177,57,47,8
+    PUSHBUTTON      "default.tbl",IDC_CHARSET,171,67,63,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 191
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_TX, DIALOG
+    BEGIN
+    END
+
+    IDD_TIP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_STATISTIC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 259
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_SPLASH, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 105
+    END
+
+    IDD_REGISTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 166
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_MYMESSAGEBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_LISTMANAGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+        HORZGUIDE, 38
+        HORZGUIDE, 64
+        HORZGUIDE, 148
+    END
+
+    IDD_LICENSE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 262
+    END
+
+    IDD_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 240
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_FILTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_ENTRYPROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 110
+    END
+
+    IDD_ENCODER, DIALOG
+    BEGIN
+    END
+
+    IDD_DECODER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_TX DLGINIT
+BEGIN
+    IDC_FCT, 0x403, 2, 0
+0x0030, 
+    IDC_FCT, 0x403, 2, 0
+0x0031, 
+    IDC_FCT, 0x403, 2, 0
+0x0032, 
+    IDC_FCT, 0x403, 2, 0
+0x0033, 
+    IDC_ENCODE, 0x403, 5, 0
+0x6542, 0x7065, "\000" 
+    IDC_ENCODE, 0x403, 8, 0
+0x754e, 0x656d, 0x6972, 0x0063, 
+    IDC_ENCODE, 0x403, 13, 0
+0x6c41, 0x6870, 0x6e61, 0x6d75, 0x7265, 0x6369, "\000" 
+    IDC_BITRATE, 0x403, 11, 0
+0x3432, 0x3030, 0x4220, 0x7469, 0x732f, "\000" 
+    IDC_BITRATE, 0x403, 11, 0
+0x3231, 0x3030, 0x4220, 0x7469, 0x732f, "\000" 
+    IDC_BITRATE, 0x403, 10, 0
+0x3135, 0x2032, 0x6942, 0x2f74, 0x0073, 
+    0
+END
+
+IDD_HARDWARE DLGINIT
+BEGIN
+    IDC_PORT, 0x403, 13, 0
+0x7830, 0x4633, 0x2038, 0x4328, 0x4d4f, 0x2931, "\000" 
+    IDC_PORT, 0x403, 13, 0
+0x7830, 0x4632, 0x2038, 0x4328, 0x4d4f, 0x2932, "\000" 
+    IDC_PORT, 0x403, 13, 0
+0x7830, 0x4533, 0x2038, 0x4328, 0x4d4f, 0x2933, "\000" 
+    IDC_PORT, 0x403, 13, 0
+0x7830, 0x4532, 0x2038, 0x4328, 0x4d4f, 0x2934, "\000" 
+    IDC_INT, 0x403, 15, 0
+0x3330, 0x2820, 0x4f43, 0x204d, 0x2032, 0x207c, 0x2934, "\000" 
+    IDC_INT, 0x403, 15, 0
+0x3430, 0x2820, 0x4f43, 0x204d, 0x2031, 0x207c, 0x2933, "\000" 
+    IDC_INT, 0x403, 5, 0
+0x3530, 0x2020, "\000" 
+    IDC_INT, 0x403, 3, 0
+0x3730, "\000" 
+    IDC_INT, 0x403, 3, 0
+0x3930, "\000" 
+    IDC_INT, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_INT, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_INT, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_RXLINE, 0x403, 4, 0
+0x5443, 0x0053, 
+    IDC_RXLINE, 0x403, 4, 0
+0x5344, 0x0052, 
+    IDC_CHANNELS, 0x403, 2, 0
+0x0031, 
+    IDC_CHANNELS, 0x403, 2, 0
+0x0032, 
+    0
+END
+
+IDD_GENERAL DLGINIT
+BEGIN
+    IDC_ELIMINATECALLS, 0x403, 6, 0
+0x656e, 0x6576, 0x0072, 
+    IDC_ELIMINATECALLS, 0x403, 15, 0
+0x6977, 0x6874, 0x7320, 0x6d61, 0x2065, 0x6574, 0x7478, "\000" 
+    IDC_ELIMINATECALLS, 0x403, 25, 0
+0x6977, 0x6874, 0x7320, 0x6d61, 0x2065, 0x6574, 0x7478, 0x2620, 0x6120, 
+0x6464, 0x6572, 0x7373, "\000" 
+    0
+END
+
+IDD_FILTER DLGINIT
+BEGIN
+    IDC_FILTERFCT, 0x403, 10, 0
+0x6f4e, 0x4620, 0x6c69, 0x6574, 0x0072, 
+    IDC_FILTERFCT, 0x403, 7, 0
+0x6341, 0x6563, 0x7470, "\000" 
+    IDC_FILTERFCT, 0x403, 7, 0
+0x6552, 0x656a, 0x7463, "\000" 
+    0
+END
+
+IDD_DECODER DLGINIT
+BEGIN
+    IDC_FCT0, 0x403, 5, 0
+0x6542, 0x7065, "\000" 
+    IDC_FCT0, 0x403, 4, 0
+0x754e, 0x006d, 
+    IDC_FCT0, 0x403, 6, 0
+0x6c41, 0x6870, 0x0061, 
+    IDC_FCT0, 0x403, 5, 0
+0x7541, 0x6f74, "\000" 
+    IDC_FCT0, 0x403, 7, 0
+0x6749, 0x6f6e, 0x6572, "\000" 
+    IDC_FCT1, 0x403, 5, 0
+0x6542, 0x7065, "\000" 
+    IDC_FCT1, 0x403, 4, 0
+0x754e, 0x006d, 
+    IDC_FCT1, 0x403, 6, 0
+0x6c41, 0x6870, 0x0061, 
+    IDC_FCT1, 0x403, 5, 0
+0x7541, 0x6f74, "\000" 
+    IDC_FCT1, 0x403, 7, 0
+0x6749, 0x6f6e, 0x6572, "\000" 
+    IDC_FCT2, 0x403, 5, 0
+0x6542, 0x7065, "\000" 
+    IDC_FCT2, 0x403, 4, 0
+0x754e, 0x006d, 
+    IDC_FCT2, 0x403, 6, 0
+0x6c41, 0x6870, 0x0061, 
+    IDC_FCT2, 0x403, 5, 0
+0x7541, 0x6f74, "\000" 
+    IDC_FCT2, 0x403, 7, 0
+0x6749, 0x6f6e, 0x6572, "\000" 
+    IDC_FCT3, 0x403, 5, 0
+0x6542, 0x7065, "\000" 
+    IDC_FCT3, 0x403, 4, 0
+0x754e, 0x006d, 
+    IDC_FCT3, 0x403, 6, 0
+0x6c41, 0x6870, 0x0061, 
+    IDC_FCT3, 0x403, 5, 0
+0x7541, 0x6f74, "\000" 
+    IDC_FCT3, 0x403, 7, 0
+0x6749, 0x6f6e, 0x6572, "\000" 
+    IDC_COMBO_BITRATE, 0x403, 11, 0
+0x3432, 0x3030, 0x4220, 0x7469, 0x732f, "\000" 
+    IDC_COMBO_BITRATE, 0x403, 11, 0
+0x3231, 0x3030, 0x4220, 0x7469, 0x732f, "\000" 
+    IDC_COMBO_BITRATE, 0x403, 11, 0
+0x3135, 0x2032, 0x6942, 0x2f74, 0x2073, "\000" 
+    IDC_COMBO_BITRATE, 0x403, 5, 0
+0x7541, 0x6f74, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM SEPARATOR
+        MENUITEM "&Search\tCtrl+F",             ID_FIND
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Levelbar",                   ID_LEVEL_VIEW
+        MENUITEM SEPARATOR
+        MENUITEM "&Font",                       ID_CHOOSEFONT
+        MENUITEM SEPARATOR
+        MENUITEM "&Always On Top",              ID_AOT
+        MENUITEM "&Hide Window",                ID_HIDE
+        MENUITEM "&Update\tF5",                 ID_UPDATEALL
+    END
+    POPUP "&Options"
+    BEGIN
+        POPUP "POCSA&G"
+        BEGIN
+            MENUITEM "&Properties\tCtrl+E",         ID_SETTINGS
+            MENUITEM "&Transmit\tCtrl+Y",           ID_TX
+        END
+        MENUITEM "&Properties",                 ID_OPTIONS_PROPERTIES
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Tip of the Day...",           CG_IDS_TIPOFTHEDAY
+        MENUITEM SEPARATOR
+        MENUITEM "Inf&o about poc32...",        ID_APP_ABOUT
+        MENUITEM "POC32 &Update",               ID_GOWWW
+        MENUITEM "POC32 &Feedback",             ID_FEEDBACK
+        MENUITEM "POC32 &License",              ID_LICENSE
+        MENUITEM "POC32 &Registration",         ID_REGISTER
+    END
+END
+
+IDR_CONTEXT MENU
+BEGIN
+    POPUP "Context"
+    BEGIN
+        MENUITEM "&Copy",                       ID_EDIT_COPY
+        MENUITEM "&Delete",                     ID_DELETECMD
+        MENUITEM "&Find",                       ID_FIND
+        MENUITEM "&Transmit",                   ID_TX
+        MENUITEM "&Properties",                 ID_ENTRYPROPERTIES
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "POCSAG Protocol Monitor\n\nPoc32\nFiletype Poc32 (*.poc)\n.poc\nPoc32.Document\nPoc32 Document"
+    IDS_PROPTITLE           "Properties"
+    IDS_APPENDFILE          "Append to existing List?"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "poc32"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_NUMBER              " "
+    IDS_TIME                "Time"
+    IDS_TYPE                "Type"
+    IDS_BITRATE             "Bit/s"
+    IDS_ADDRESS             "Address"
+    IDS_FUNC                "Function"
+    IDS_MSG                 "Message"
+    IDS_NOMATCHES           "No further matches!"
+    IDS_NOCLIPBRD           "Could not open the clipboard."
+    IDS_NOCLPCPY            "Could not copy data to clipboard"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TX                   "Start Transmission.\nTransmit"
+    ID_TMOBIL               "Switch to TMOBIL Mode.\nTMOBIL"
+    ID_TELMI                "Switch to TelMI Mode.\nTelMI"
+    ID_QUIX                 "Switch to QUIX Mode.\nQUIX"
+    ID_SETTINGS             "De-/Encoder Settings.\nProperties"
+    ID_DCD                  "Signals valid reception.\nDCD"
+    ID_1200                 "Switch to 1200Bit/s.\n1200Bit/s"
+END
+
+STRINGTABLE
+BEGIN
+    ID_2400                 "Switch to 2400Bit/s.\n2400Bit/s"
+    ID_512                  "Switch to 512Bit/s.\n512Bit/s"
+    ID_FIND                 "Find text in monitor window."
+    ID_AUTOBAUD             "Switch to automatic bitrate detection.\nAuto Bitrate"
+    ID_AUTOMSG              "Automatic message type.\nAuto Messagetype"
+    ID_STOP                 "Stop output.\nStop!"
+    ID_LEVEL                "Level meter."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MONPRT              "POCSAG Monitorprint"
+    IDS_MONPRTFILE          "File %s"
+    IDS_MONPRTPAGE          "Page %d"
+    IDS_PORTERR             "Port- and/or interrupt-assignment failed!\r\nCheck driver installation!"
+    IDS_NOVXD               "ATTENTION: The file POC.VXD was not found!\r\nPlease install driver!"
+    IDS_WRONGVXD            "The version of the device driver is out of date\r\nplease install new version!"
+    IDS_STORING             "Storing document"
+    IDS_LOADING             "Loading document"
+    IDS_UPDLIST             "Creating list"
+    IDS_FLTACT              "Don`t forget!\r\n\r\nYou have set a filter."
+    IDS_NOSEL               "Sorry, there is no selected entry:\nCopy all entries to clipboard?"
+    IDS_NOITEMS             "Sorry, but there are no entries to copy!"
+    IDS_FMTERR              "Format error in file at line %d!\nContinue loading or stop?"
+    IDS_SYNCERR             "Invalid synchronousword!"
+    IDS_SOURCE              "Source"
+    IDS_WAVERR              "Could not access the soundcard!\r\nMaybe it is used by another application or it does not support the desired parameters."
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_WAITSND             "Waiting for soundcard...."
+    IDS_DORX                "Receiving data ....."
+    ID_LEVEL0               "Audio level of left channel.\nLevel left"
+    ID_LEVEL1               "Audio level of right channel.\nLevel right"
+    IDS_LICSTR1             "POC32 ©1997-2018 BayCom GmbH - All rights reserved\r\n\r\nBy clicking on ""ACCEPT"" you agree to the conditions of the license for POC32 . If you disagree with these license conditions click on ""DISAGREE"".\r\n\r\nPOC32 may only be used if you agree to every item in the list below:\r\n\r\n1. This POC32 copy is licensed exclusively for non-commercial, private usage. Every other usage must me licensed by the author.\r\n\r\n2. POC32 has to be used only on amateur radio (ham- radio) frequencies.\r\n\r\n3. The distribution of POC32 is only allowed, if all files of the archive are neither modified nor deleted.\r\n\r\n4. The author is not responsible for any damages of your soft- and hardware.\r\n\r\n"
+    IDS_LICSTR2             "5. The user is responsible to obey the laws of his country.\r\n\r\nThe following expressions and associated logos are registerd trademarks:\r\n\r\nCityruf, Scall, Skyper, TMOBIL of Deutsche Telekom A.G.\r\n\r\nQuix of Miniruf GmbH\r\n\r\nTelMI of Deutsche Funkruf GmbH."
+    IDS_WNDTOP              "Bring POC32 window to top."
+    IDS_NOFILE              "The character translation table %s cannot be opened."
+    IDS_TBLFILE             "Character translation table (*.tbl)"
+    IDS_NODEFASSOC          "There is no default association for internet destinations."
+    IDS_PROPTITLEGENERAL    "General Settings"
+    IDS_ALIAS               "Alias"
+    IDS_MSGCNT              "Messages: 000000 / 000000"
+    IDS_UPTIME              "Uptime: 000d 00h 00m"
+    IDS_UPTIME_DAY          "Uptime: %Hh %Mm"
+END
+
+STRINGTABLE
+BEGIN
+    ID_LEVEL_VIEW           "Level Meter."
+    ID_AOT                  "Make the POC32 window topmost."
+    ID_HIDE                 "Hide window when minimized."
+    ID_CHOOSEFONT           "Select to change the font."
+    ID_GOWWW                "Check out the POC32 homepage in WWW."
+    ID_FEEDBACK             "Send Email to poc32@baycom.de"
+    ID_LICENSE              "Here you can read the POC32 license conditions again."
+    ID_OPTIONS_PROPERTIES   "Enter POC32 propertypage.\nPOC32 Property page"
+    ID_OPTIONS_FLEX_PROPERTIES "FLEX protocol settings"
+END
+
+STRINGTABLE
+BEGIN
+    CG_IDS_TIPOFTHEDAY      "Displays a Tip of the Day."
+    CG_IDS_TIPOFTHEDAYMENU  "Ti&p of the Day..."
+    CG_IDS_DIDYOUKNOW       "Did you know..."
+    CG_IDS_FILE_ABSENT      "Tips file does not exist in the prescribed directory"
+    CG_IDP_FILE_CORRUPT     "Trouble reading the tips file"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_UPTIME_DAYS         "Uptime: %Dd %Hh %Mm"
+    IDS_MSGS                "Messages: "
+    IDS_DELETE              "Really delete list entries?"
+    IDS_LISTEN_INUSE        "TCP/IP Port already in use."
+    IDS_LISTEN_ERROR        "Could not open TCP/IP port."
+    IDS_CANT_LISTEN         "TCP/IP sockets could not be initialised."
+    IDS_REGISTERED          "The program is now registered!"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_DELETECMD           "Delete list entry"
+    ID_REGISTER             "By registering the program you get rid of the shareware restrictions."
+    ID_DELETECMD            "Delete list entry."
+    ID_UPDATEALL            "Rebuilt visual list."
+END
+
+STRINGTABLE
+BEGIN
+    IDD_REGISTER            "Registering POC32 to get rid of the dump shareware messages..."
+END
+
+#endif    // Englisch (USA) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE 7, 1
+#pragma code_page(1252)
+#endif
+#include "res\pex32.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.deu\afxres.rc"          // Standard components
+#include "l.deu\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

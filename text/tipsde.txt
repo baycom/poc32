@@ -1,0 +1,17 @@
+Beim Klicken auf den Listenkopf können die Einträge nach der jeweiligen Kategorie sortiert werden. Beim erneuten Klicken wird die Sortierreihenfolge umgekehrt. Standardmäßig wird nach der laufenden Nummer sortiert, dazu muß auf die leeren Listenkopf ganz links geklickt werden.
+Mit dem Menü Ansicht/Verstecken kann das POC32 Fenster vom Bildschirm entfernt werden. POC32 läuft jedoch im Hintergrund weiter und kann mit einem Klick der linken Maustaste auf das POC32 Symbol ganz rechts in der Taskleiste wieder sichtbar gemacht werden.
+POC32 Dateien werden als ASCII Text gespeichert. Sie können beispielsweise unter Microsoft Word in eine Tabelle umgewandelt werden, zur Spaltentrennung wird das Tabulatorzeichen verwendet.
+POC32 kann verschiedene Zeichentabellen und Zeichensätze verwenden. Dadurch funktioniert es in jedem Land. Die Einstellungen dazu finden sich unter Ansicht/Zeichensatz und En-/Dekoder/Einstellungen/Decoder/Zeichentabelle.
+Mit dem Menü Ansicht/Always On Top kann das POC32 dauerhaft in den Vordergrund gebracht werden. Dadurch kann man mit anderen Applikationen weiterarbeiten und trotzdem das POC32 Fenster weiter beobachten.
+Skypernachrichten werden von POC32 automatisch dekodiert, sobald entweder das T-Symbol auf der Werkzeugleiste oder im En-/Dekoder/Decoder Menü der Skyper Modus aktiviert wird. Die Zeichenübersetzung wird über eine interne Zeichentabelle abgewickelt.
+POC32 kann die Soundkarte und/oder einen kleinen Dekoder an der seriellen Schnittstelle verwenden. Baudraten und Nachrichtentyp werden automatisch erkannt.
+Eine gute Dekodierungsqualität ist nur dann zu erwarten, wenn der Basisband- (=Diskriminator-) ausgang des Empfängers verwendet wird.
+Bei manchen neuen PCI Motherboards kann der Dekoder an der seriellen Schnittstelle nicht verwendet werden.
+POC32 wurde in Mircosoft Visual C++ mit den Microsoft Foundation Classes geschrieben.
+Bei Verwendung der Soundkarte tastet POC32 mit 11.025 KHz und 16-Bit ab. Um die Daten zu dekodieren wird eine digitale PLL verwendet.
+Eine Statistik über die empfangenen Pakete kann unter En-/Dekoder/Eigenschaften/Statistik abgerufen werden.
+POC32 kann den Inhalt des Monitorfensters auch ausdrucken!
+Das Aussenden von POCSAG Paketen funktioniert nur unter Windows 95. Mit dem Menü En-/Dekoder/Senden wird der Senden Dialog geöffnet.
+Um die POC32 Daten bereits formatiert in ein Textverarbeitungsprogramm zu übernehmen, kann der Inhalt des Monitorfensters auf die Zwischenablage kopiert werden. Zur Trennung der Spalten wird das Tabulatorzeichen verwendet.
+Alle Werkzeugleisten können in ihrer Position verändert werden. Hierzu müssen sie einfach mit der Maus vom Rahmenfenster weggezogen werden.
+Die meisten Probleme mit POC32 ergeben sich dadurch, daß die Benutzer es nicht für nötig halten die Dokumentation vollständig zu lesen!
