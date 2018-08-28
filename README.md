@@ -8,7 +8,7 @@ Description: POC32 is a POCSAG protocol en-/decoder software
 
 ------------------------------------------------------------------------------
 
-Welcome to the wonderfull world of Microsoft's idea of C++. 
+Welcome to the wonderful world of Microsoft's idea of C++. 
 
 POC32 is developed using the MFC (Microsoft Foundation Classes), which make your
 programs look like an original microsoft application.
