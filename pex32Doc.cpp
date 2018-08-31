@@ -647,15 +647,6 @@ LONG CPex32Doc::OnNewWavData (UINT wParam, LONG lParam)
     rec = FALSE;
   int
     i = ((LPWAVEHDR) lParam)->dwUser;
-#ifdef _SHAREWARE
-  if (m_shareware && (time (NULL) - m_timespan) > 600) {
-    m_timespan = time (NULL);
-    rec = TRUE;
-    AfxMessageBox
-      ("Please register POC32 this shareware to get rid of this message!\nSee register.txt for more information.\nDiese laestige Meldung erscheint nicht, bei der Vollversion von POC32!\nMehr dazu in register.txt.");
-    rec = FALSE;
-  }
-#endif
 
   waveInUnprepareHeader ((HWAVEIN) wParam, (LPWAVEHDR) lParam,
 			 sizeof (WAVEHDR));
@@ -943,16 +934,6 @@ CPex32Doc::OnTimer (UINT nIDEvent)
 {
   static BOOL rec = FALSE;
   time_t t = time (NULL);
-#ifdef _SHAREWARE
-  if (m_shareware && (t - m_timespan) > 600) {
-    m_timespan = time (NULL);
-    rec = TRUE;
-    AfxMessageBox
-      ("Please register POC32 this shareware to get rid of this message!\nSee register.txt for more information.\nDiese laestige Meldung erscheint nicht, bei der Vollversion von POC32!\nMehr dazu in register.txt.");
-
-    rec = FALSE;
-  }
-#endif
   if (m_sg.m_lmn.m_autosave && m_sg.m_lmn.m_autosavenum
       && (t - m_last_saved) > (m_sg.m_lmn.m_autosavenum * 60)) {
     if (!m_lastlistname.IsEmpty () && m_mainfrm) {
@@ -1613,13 +1594,6 @@ CPex32Doc::decode_msg (pocsag_rx_t * rx)
   batch_t *b;
   int fct = -1, func = -1, i;
   DWORD d, e, adr;
-#ifdef _SHAREWARE
-  if (m_shareware && (time (NULL) - m_timespan) > 600) {
-    m_timespan = time (NULL);
-    AfxMessageBox
-      ("Please register POC32 this shareware to get rid of this message!\nSee register.txt for more information.\nDiese laestige Meldung erscheint nicht, bei der Vollversion von POC32!\nMehr dazu in register.txt.");
-  }
-#endif
 
   /* If there is no pocsag_rx structure defined decode_msg must have been 
      called by Timer
