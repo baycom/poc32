@@ -1,3 +1,5 @@
+In case mfc140.dll or VCRUNTIME140.dll is missing please download vc_redist.x86.exe directly from Microsoft here: https://www.microsoft.com/en-us/download/details.aspx?id=48145
+
 POC32 Implementation Guide 
 
 Version    : 1.0.19
